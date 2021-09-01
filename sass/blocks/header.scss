@@ -1,5 +1,5 @@
 header{
-    background-image: url(../../img/header-bg.jpg);
+    background-image: url(../img/header-bg.jpg);
     background-size: cover;
     height: fit-content;
     &>div{
@@ -10,7 +10,7 @@ header{
 }
 
 .work_header{
-    background-image: url(../../img/work.jpg); 
+    background-image: url(../img/work.jpg); 
 
     &_content{
         padding: 131px 0 126px 0;
@@ -23,7 +23,7 @@ header{
 }
 
 .advantage_header{
-    background-image: url(../../img/advantage.jpg); 
+    background-image: url(../img/advantage.jpg); 
 
     &_content{
         padding: 131px 0 170px 0;
@@ -36,7 +36,7 @@ header{
 }
 
 .contacts_header{
-    background-image: url(../../img/contacts.jpg); 
+    background-image: url(../img/contacts.jpg); 
 
     &_content{
         padding: 131px 0 170px 0;
