@@ -1,0 +1,46 @@
+@import "fonts";
+@import "media";
+@import "vars";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/about";
+@import "blocks/products";
+@import "blocks/slider";
+@import "blocks/partners";
+@import "blocks/work";
+@import "blocks/advantage";
+@import "blocks/contacts";
+
+// global
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1117px;
+    margin: 0 auto;
+}
+
+.page{
+    h1{
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
+
+.grey{
+    background-color: #C5C5C51A;
+}

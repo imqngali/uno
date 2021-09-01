@@ -1,0 +1,146 @@
+header{
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    height: fit-content;
+    &>div{
+        background: #000000AD;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.work_header{
+    background-image: url(../img/work.jpg); 
+
+    &_content{
+        padding: 131px 0 126px 0;
+        h1{
+            font-size: 72px !important;
+            color: #fff;
+            width: 100%;
+        }
+    }
+}
+
+.advantage_header{
+    background-image: url(../img/advantage.jpg); 
+
+    &_content{
+        padding: 131px 0 170px 0;
+        h1{
+            font-size: 72px !important;
+            color: #fff;
+            width: 100%;
+        }
+    }
+}
+
+.contacts_header{
+    background-image: url(../img/contacts.jpg); 
+
+    &_content{
+        padding: 131px 0 170px 0;
+        h1{
+            font-size: 72px !important;
+            color: #fff;
+            width: 100%;
+        }
+    }
+}
+
+.header{
+    &_inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    &_logo{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_nav{
+        .nav_item{
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+            padding: 9px 11px 11px 12px;
+            margin-left: 32px;
+            border: 1px solid transparent;
+            transition: all .3s;
+            &:hover{
+                border: 1px #30D5C8 solid;
+                background-color: #30D5C8;
+                border-radius: 10px;
+            }
+
+            &.active{
+                border: 1px #30D5C8 solid;
+                background-color: #30D5C8;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &_btn{
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        font-size: 14px;
+        padding: 11px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            background-color: #fff;
+            color: #000000AD;
+        }
+    }
+
+    &_content{
+        width: fit-content;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 220px;
+        text-align: center;
+
+        h2{
+            color: #fff;
+            font-size: 72px;
+            font-weight: 500;
+        }
+
+        div{
+            color: #fff;
+            font-size: 24px;
+            padding-top: 39px;
+        }
+    }
+
+    &_stroke{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 186px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 870px) and (max-width: 1117px){
+    .header{
+        &_inner{
+            padding: 0 30px;
+            padding-top: 40px;
+        }
+    }
+
+    .advantage_header{
+        &_content{
+            padding-left: 30px;
+        }
+    }
+}

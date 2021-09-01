@@ -1,0 +1,56 @@
+.advantage{
+    &_items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 120px;
+    }
+
+    &_item{
+        width: 30%;
+        text-align: center;
+
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            color: #101010;
+        }
+    }
+
+    &_contacts{
+        margin-top: 120px;
+
+        h1{
+            text-align: center;
+        }
+
+        &_inner{
+            display: flex;
+            align-items: center;
+            margin-top: 90px;
+        }
+
+        &_text{
+            &>div{
+                display: flex;
+                align-items: baseline;
+                padding-top: 30px;
+            }
+
+            &>div:first-child{
+                padding-top: 0;
+            }
+
+            p{
+                font-size: 24px;
+                font-weight: 700;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 870px) and (max-width: 1117px){
+    .advantage{
+        margin: 0 30px;
+    }
+}

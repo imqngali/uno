@@ -1,0 +1,29 @@
+.about{
+    display: flex;
+    margin-top: 72px;
+    &_text{
+        padding-top: 68px;
+
+        &>div{
+            padding-top: 20px;
+        }
+
+        div>p{
+            font-size: 16px;
+        }
+
+        a{
+            display: block;
+            color: #30D5C8;
+            text-decoration: none;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 870px) and (max-width: 1117px){
+    .about{
+        margin: 0 30px;
+        margin-top: 72px;
+    }
+}
