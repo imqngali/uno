@@ -22,17 +22,26 @@
                 }
 
                 div{
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
                     padding: 0 10px;
                     padding-top: 25px;
 
-                    a{
+                    label{
                         font-size: 16px;
                         text-decoration: none;
                         color: #000;
                     }
 
-                    a:focus{
-                        color: #30D5C8;
+                    label:hover{
+                        color: #30D5C8 !important;
+                    }
+
+                    input{
+                        width: 21.45px;
+                        height: 21.45px;
+                        align-self: center;
                     }
                 }
             }
