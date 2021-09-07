@@ -36,11 +36,22 @@ body{
 
 .page{
     h1{
-        font-size: 32px;
-        font-weight: 600;
+        font-size: 72px;
+        color: #fff;
+        width: 100%;
     }
 }
 
 .grey{
     background-color: #C5C5C51A;
+}
+
+.hide-for-d{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .hide-for-d{
+        display: flex;
+    }
 }

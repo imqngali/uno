@@ -75,3 +75,19 @@
         margin-top: 180px;
     }
 }
+
+@media (max-width: 767px){
+    .products{
+        &_items{
+            display: block;
+        }
+
+        &_item{
+            width: 90%;
+        }
+
+        &_text{
+            height: 230px;
+        }
+    }
+}

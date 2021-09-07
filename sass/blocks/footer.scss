@@ -98,3 +98,38 @@ footer{
         margin: 0 30px;
     }
 }
+
+@media (max-width: 767px){
+    footer{
+        margin-top: 50px;
+    }
+
+    .footer{
+        &_inner{
+            display: block;
+            padding-top: 0;
+            padding-bottom: 30px;
+
+            span, a, p{
+                font-size: 15px;
+            }
+
+            &>div{
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 30px;
+                max-width: 60%;
+                text-align: center;
+
+                &>div{
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+
+            &>div:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+}

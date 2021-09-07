@@ -21,6 +21,7 @@
 
         h1{
             text-align: center;
+            color: #000 !important;
         }
 
         &_inner{
@@ -46,11 +47,58 @@
                 padding-left: 30px;
             }
         }
+
+        &_image{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 
 @media (min-width: 870px) and (max-width: 1117px){
     .advantage{
         margin: 0 30px;
+    }
+}
+
+@media (max-width: 767px){
+    .advantage{
+        &_items{
+            display: block;
+            margin-top: 50px;
+        }
+
+        &_item{
+            width: 90%;
+            margin:  0 auto;
+            margin-top: 30px;
+        }
+
+        &_contacts{
+            margin-top: 50px;
+
+            &_inner{
+                display: block;
+                margin-top: 30px;
+            }
+
+            &_text{
+                margin: 0 20px;
+
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            &_image{
+                margin-top: 30px;
+            }
+        }
+
+        &_footer{
+            margin-top: 50px !important;
+        }
     }
 }

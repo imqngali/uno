@@ -3,6 +3,7 @@
     margin-top: 72px;
     &_text{
         padding-top: 68px;
+        width: 50%;
 
         &>div{
             padding-top: 20px;
@@ -19,11 +20,46 @@
             padding-top: 10px;
         }
     }
+
+    &_images{
+        width: 50%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 @media (min-width: 870px) and (max-width: 1117px){
     .about{
         margin: 0 30px;
         margin-top: 72px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 870px){
+    .slider{
+        &_inner{
+            margin: 0 30px;
+            justify-content: unset;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .about{
+        display: block;
+
+        &_text{
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        &_images{
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
     }
 }

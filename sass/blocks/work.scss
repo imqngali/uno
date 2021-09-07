@@ -21,35 +21,17 @@
                     padding-left: 5px;
                 }
 
-                div{
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    padding: 0 10px;
-                    padding-top: 25px;
-
-                    label{
-                        font-size: 16px;
-                        text-decoration: none;
-                        color: #000;
-                        cursor: pointer;
-                    }
-
-                    label:hover{
-                        color: #30D5C8 !important;
-                    }
-
-                    input{
-                        width: 21.45px;
-                        height: 21.45px;
-                        align-self: center;
-                    }
+                &>div{
+                    position: relative;
+                    padding-right: 50px;
+                    padding-top: 30px;
                 }
             }
         }
 
         &_image{
             width: 60%;
+            height: fit-content;
             img{
                 width: 100%;
                 height: 100%;
@@ -63,6 +45,7 @@
         h1{
             font-size: 24px !important;
             font-weight: 700 !important;
+            color: #000 !important;
         }
 
         h2{
@@ -104,10 +87,6 @@
                     display: list-item;
                     padding-top: 10px;
                     line-height: 40px;
-                }
-
-                p::marker{
-                    color:#30D5C8;
                 }
             }
         }
@@ -177,6 +156,13 @@
             margin: 0 auto;
         }
 
+        &_item{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
         &_col:first-child>div:last-child{
             margin-left: 84px;
         }
@@ -212,6 +198,70 @@
     cursor: pointer;
 }
 
+.checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox_label {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #39354D;
+    cursor: pointer;
+}
+
+.checkbox_label.active{
+    color: #30D5C8;
+}
+
+.checkbox_label:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #30D5C81A;
+    background-color: #30D5C81A;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 1;
+
+    transition: background .1s linear, border .1s linear;
+}
+
+.checkbox_label::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../img/check.svg");
+    background-size: 12px 12px;
+    opacity: 0;
+
+    position: absolute;
+    top: 38px;
+    right: 23px;
+    z-index: 2;
+
+    transition: opacity .1s linear;
+}
+
+.checkbox:checked + .checkbox_label:before {
+    background-color: #30D5C8;
+    border-color: #30D5C8;
+}
+
+.checkbox:checked + .checkbox_label:after {
+    opacity: 1 !important;
+    z-index: 5
+}
+
 
 @media (min-width: 870px) and (max-width: 1117px){
     .work{
@@ -230,6 +280,60 @@
 
         &_header_content{
             padding-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .work{
+        margin-top: 40px;
+        &_products{
+            flex-direction: column;
+
+            &_filter{
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            &_image{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+        }
+
+        &_draft{
+            &_col{
+                display: block;
+            }
+        }
+
+        &_text{
+            margin-top: 50px;
+
+            &>.container{
+                padding: 30px;
+            }
+        }
+
+        &_info_image{
+            display: none;
+        }
+
+        &_info_text-inner{
+            padding: 30px;
+
+            &>h2{
+                font-size: 20px;
+            }
+        }
+
+        &_table{
+            display: none;
+        }
+
+        .checkbox_label{
+            font-size: 14px;
         }
     }
 }

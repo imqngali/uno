@@ -51,3 +51,14 @@
         margin-top: 95px;
     }
 }
+
+@media (max-width: 767px){
+    .partners{
+        margin: 0 30px;
+        margin-top: 65px;
+
+        &_items{
+            margin: 0 10px;
+        }
+    }
+}
